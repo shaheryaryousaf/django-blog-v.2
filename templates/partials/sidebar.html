@@ -1,0 +1,28 @@
+<aside>
+	<form action="{% url 'search' %}">
+	    <input type="search" name="keywords" placeholder="Search" class="form-control" />
+		<button type="submit" class="btn btn-primary btn-block" style="display: none; ">Search</button>
+	</form>
+    <hr />
+    <ul class="list-group">
+    	<li class="list-group-item active"><b>Categories</b></li>
+    	{% if categories %}
+    		{% for category in categories %}
+    			<li class="list-group-item"><a href="{% url 'category' category.slug %}">{{ category.title }}</a></li>
+    		{% endfor %}
+    	{% else %}
+    		No Categories
+    	{% endif %}
+    </ul>
+    <hr />
+    <ul class="list-group">
+    	<li class="list-group-item active"><b>Recent Posts</b></li>
+    	{% if posts %}
+    		{% for post in posts %}
+    			<li class="list-group-item"><a href="{% url 'index' post.slug %}">{{post.title}}</a></li>
+    		{% endfor %}
+    	{% else %}
+    		No Posts
+    	{% endif %}
+    </ul>
+</aside>

@@ -1,0 +1,53 @@
+.nav-item a.nav-link{
+    color: white !important;
+}
+
+.navbar-text a, .navbar-text a:hover{
+    text-decoration: none;
+}
+
+.main{
+    margin: 3% 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+p{
+    margin-top: 1rem !important;
+}
+
+h2 a, h2 a:hover{
+	text-decoration: none;
+}
+
+.card{
+	margin-bottom: 10px;
+}
+
+.card h5 a, .card h5 a:hover{
+	text-decoration: none;
+}
+
+ul li a, ul li a:hover{
+	text-decoration: none;
+}
+
+footer{
+	background-color: #007bff!important;
+}
+
+footer, footer a{
+	color: #fff !important;
+	text-decoration: none;
+}
+
+#sidebar ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+#sidebar ul li a:hover{
+	text-decoration: none;
+}
